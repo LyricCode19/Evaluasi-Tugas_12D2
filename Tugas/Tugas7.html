@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konversi Mata Uang</title>
+
+  <style>
+    /* Konten di Posisi tengah layar */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://img.freepik.com/premium-photo/dollar-falling-from-broken-money-black-background_1006786-891.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input, select, button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+   </head>
+
+
+  <body>
+
+     <!-- Container utama → membungkus semua elemen (input dan output) -->
+     <div class="container">
+     <!-- Judul -->
+     <h2>Konversi Mata Uang</h2>
+
+     <!-- Label input nominal -->
+     <label for="nominal">Masukkan Nominal:</label>
+
+      <!-- Input untuk memasukkan nominal uang yang akan dikonversi -->
+      <input type="number" id="nominal" placeholder="Nominal: 0" />
+
+      <!-- Label dropdown pilihan jenis (konversi) -->
+      <label for="jenis">Jenis Konversi:</label>
+
+      <!-- id="jenis" fungsi → dibaca di JavaScript -->
+      <select id="jenis">
+
+      <!-- option yang digunakan di JavaScript untuk menentukan (konversi) -->
+      <option value="USDtoIDR">USD ke IDR</option>
+      <option value="YENtoIDR">YEN ke IDR</option>
+      <option value="IDRtoUSD">IDR ke USD</option>
+       </select>
+
+     <!-- Tombol konversi -->
+     <button onclick="konversiMataUang()">Konversi</button>
+
+     <!-- id="output" Tempat hasil konversi, akan ditampilkan oleh JavaScript -->
+     <div id="output"></div>
+  </div>
+
+
+<script>
+  // Fungsi dipanggil ketika tombol "Konversi" diklik
+  function konversiMataUang() {
+
+    // Mengambil nilai input dari user dan mengubahnya ke (float)
+    const nominal = parseFloat(document.getElementById("nominal").value);
+
+    // Mengambil jenis konversi yang dipilih user (dari <select>)
+    const jenis = document.getElementById("jenis").value;
+
+    // Menunjuk elemen tempat hasil konversi akan ditampilkan
+    const output = document.getElementById("output");
+
+    // Variabel untuk menyimpan hasil akhir konversi
+    let hasil = "";
+
+    // Mengecek apakah input valid (angka dan tidak negatif)
+    if (isNaN(nominal) || nominal < 0) {
+      hasil = "Masukkan nominal yang valid."; // Tampilkan pesan kesalahan
+    } else {
+      // Nilai tukar tetap (bisa diubah sesuai data terkini)
+      const rateUSD_IDR = 15000; // 1 USD = 15.000 IDR
+      const rateYEN_IDR = 120;   // 1 YEN = 120 IDR
+
+      // Switch case untuk menentukan jenis konversi yang dipilih
+      switch (jenis) {
+        case "USDtoIDR":
+          // Jika USD ke IDR → dikalikan dengan 15.000
+          hasil = nominal + " USD = " + (nominal * rateUSD_IDR).toLocaleString("id-ID") + " IDR";
+          break;
+
+        case "YENtoIDR":
+          // Jika YEN ke IDR → dikalikan dengan 120
+          hasil = nominal + " YEN = " + (nominal * rateYEN_IDR).toLocaleString("id-ID") + " IDR";
+          break;
+
+        case "IDRtoUSD":
+          // Jika IDR ke USD → dibagi dengan 15.000, hasil dibulatkan 2 desimal
+          hasil = nominal + " IDR = " + (nominal / rateUSD_IDR).toFixed(2) + " USD";
+          break;
+
+        default:
+          // Jika nilai tidak dikenali
+          hasil = "Pilihan konversi tidak dikenali.";
+      }
+    }
+
+      // Menampilkan hasil ke elemen output
+        output.textContent = hasil;
+       }
+      </script>
+  </body>
+
+</html>
+ 

@@ -1,0 +1,1056 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+   position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+
+
+/* Container latar belakang split */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 8200px; /* → agar minimal setinggi layar */
+}
+
+
+.left {
+  background-color: #e6e6d8;
+  flex: 3;
+  padding: 60px;
+  text-align: left;
+}
+
+.right {
+
+  background-color: #787427;
+    flex: 2;
+}
+
+
+.left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-family: serif, 'Georgia';
+  color: #000000
+  ;
+}
+
+.left .judul-tugas {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+/* Floating Box (box melayang di atas) */
+.floating-box {
+  position: absolute;
+  top: 400px;
+  height: 620px;
+  width:  700px;
+  right:  140px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box {
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+
+
+
+/* Floating Box Kedua */
+.floating-box-2 {
+  position: absolute;
+  top: 1100px;        /* 50 (jarak atas) + 620 (tinggi box) + 50 (jarak antar box) */
+  height: 620px;
+  width:  700px;
+  right:  140px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-2 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-2 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ketiga */
+.floating-box-3 {
+  position: absolute;
+  top: 1800px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-3 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-3 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ke empat */
+.floating-box-4 {
+  position: absolute;
+  top: 2500px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-4 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-4 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+
+/* Floating Box Ke lima */
+.floating-box-5 {
+  position: absolute;
+  top: 3200px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-5 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-5 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-5 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ke enam */
+.floating-box-6 {
+  position: absolute;
+  top: 3900px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-6 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-6 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-6 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+
+/* Floating Box Ke tujuh */
+.floating-box-7 {
+  position: absolute;
+  top: 4600px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-7 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-7 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-7 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ke delapan */
+.floating-box-8 {
+  position: absolute;
+  top: 5300px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-8 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-8 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-8 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ke sembilan */
+.floating-box-9 {
+  position: absolute;
+  top: 6000px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-9 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-9 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-9 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+
+/* Floating Box Ke sepuluh */
+.floating-box-10 {
+  position: absolute;
+  top: 6700px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-10 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-10 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-10 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* Floating Box Ke sebelas */
+.floating-box-11 {
+  position: absolute;
+  top: 7400px;     /* 720 (atas box2) + 620 (tinggi box) + 50 (jarak antar) */
+  height: 620px;
+  width:  750px;
+  right:  96px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bungkus yang menyamakan ukuran asli */
+.scale-wrapper-11 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* bagian yang dikecilkan */
+.inner-box-11 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.inner-box-11 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+/* === Lihat GitHub === */
+.lihat-GitHub {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Georgia';
+  font-style: italic;
+}
+
+.lihat-GitHub a {
+  text-decoration: none;
+  color: black;
+}
+
+.lihat-GitHub a:hover {
+  background-color: rgba(30, 30, 30, 0.9); /* warna gelap semi-transparan */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* bayangan lembut */
+  transition: all 0.3s ease;
+}
+ 
+
+
+/*====================================================================*/
+/* ============================= */
+/* Responsive  Tablet Besar (max 1440px) */
+/* ============================= */
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 11310px;
+    position: relative;
+  }
+  .floating-box {
+    position: absolute;
+    top: 310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-2{
+    position: absolute;
+    top: 1310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-3{
+    position: absolute;
+    top: 2310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-4{
+    position: absolute;
+    top: 3310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+    .floating-box-5 {
+    position: absolute;
+    top: 4310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-6{
+    position: absolute;
+    top: 5310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-7{
+    position: absolute;
+    top: 6310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-8{
+    position: absolute;
+    top: 7310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-9{
+    position: absolute;
+    top: 8310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .floating-box-10{
+    position: absolute;
+    top: 9310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .floating-box-11{
+    position: absolute;
+    top: 10310px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+  .scale-wrapper,
+  .scale-wrapper-2,
+  .scale-wrapper-3, 
+  .scale-wrapper-4, 
+  .scale-wrapper-5,
+  .scale-wrapper-6,
+  .scale-wrapper-7,
+  .scale-wrapper-8,
+  .scale-wrapper-9,
+  .scale-wrapper-10
+  .scale-wrapper-11 {
+    width: 100%;
+    height: 1000px;
+    transform: none;
+    transform-origin: top center;
+  }
+  .inner-box,
+  .inner-box-2,
+  .inner-box-3,
+  .inner-box-4,
+  .inner-box-5,
+  .inner-box-6,
+  .inner-box-7,
+  .inner-box-8,
+  .inner-box-9,
+  .inner-box-10
+  .inner-box-11  {
+    transform: scale(0.9); 
+    transform-origin: top center;
+  }
+}
+
+/*=============================================================*/
+/* ============================= */
+/* Responsive Tablet Mini (max 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 10700px;
+    position: relative;
+  }
+  .floating-box {
+    position: absolute;
+    top: 400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-2{
+    position: absolute;
+    top: 1400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-3{
+    position: absolute;
+    top: 2400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-4{
+    position: absolute;
+    top: 3400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-5{
+    position: absolute;
+    top: 4400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-6{
+    position: absolute;
+    top: 5400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-7{
+    position: absolute;
+    top: 6400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-8{
+    position: absolute;
+    top: 7400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-9{
+    position: absolute;
+    top: 8400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-10{
+    position: absolute;
+    top: 8400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .floating-box-11{
+    position: absolute;
+    top: 9500px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .scale-wrapper,
+  .scale-wrapper-2,
+  .scale-wrapper-3, 
+  .scale-wrapper-4, 
+  .scale-wrapper-5,
+  .scale-wrapper-6,
+  .scale-wrapper-7,
+  .scale-wrapper-8,
+  .scale-wrapper-9,
+  .scale-wrapper-10
+  .scale-wrapper-11 {
+    width: 100%;
+    height: 1000px;
+    transform: none;
+    transform-origin: top center;
+  }
+  
+  .inner-box,
+  .inner-box-2,
+  .inner-box-3,
+  .inner-box-4,
+  .inner-box-5,
+  .inner-box-6,
+  .inner-box-7,
+  .inner-box-8,
+  .inner-box-9,
+  .inner-box-10
+  .inner-box-11 {
+    transform: scale(0.9); 
+    transform-origin: top center;
+  }
+}
+
+
+/*=======================================================*/
+/* ============================= */
+/* Responsive Smartphone Ukuran_Besar, sedang, kecil (max 576px) */
+/* ============================= */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 11550px;
+    position: relative;
+  }
+  .floating-box {
+    position: absolute;
+    top: 410px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-2{
+    position: absolute;
+    top: 1380px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-3{
+    position: absolute;
+    top: 2350px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floating-box-4{
+    position: absolute;
+    top: 3300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-5{
+    position: absolute;
+    top: 4300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-6{
+    position: absolute;
+    top: 5300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-7{
+    position: absolute;
+    top: 6300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .floating-box-8{
+    position: absolute;
+    top: 7300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-9{
+    position: absolute;
+    top: 8300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-10{
+    position: absolute;
+    top: 9300px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .floating-box-11 {
+    position: absolute;
+    top: 10400px;
+    height: 1000px;
+    width: 80%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+  .scale-wrapper,
+  .scale-wrapper-2,
+  .scale-wrapper-3, 
+  .scale-wrapper-4, 
+  .scale-wrapper-5,
+  .scale-wrapper-6,
+  .scale-wrapper-7,
+  .scale-wrapper-8,
+  .scale-wrapper-9,
+  .scale-wrapper-10 
+  .scale-wrapper-11 {
+    width: 100%;
+    height: 1000px;
+    transform: none;
+    transform-origin: top center;
+  }
+  .inner-box,
+  .inner-box-2,
+  .inner-box-3,
+  .inner-box-4,
+  .inner-box-5,
+  .inner-box-6,
+  .inner-box-7,
+  .inner-box-8,
+  .inner-box-9,
+  .inner-box-10
+  .inner-box-11 {
+    transform: scale(0.9); 
+    transform-origin: top center;
+  }
+}
+/*=================================================*/
+

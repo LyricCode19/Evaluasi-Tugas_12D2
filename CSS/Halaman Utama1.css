@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #e6e6d8;
+  color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Semua layar KECUALI desktop (HP & tablet): 40% / 60% */
+.left {
+  width: 40%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 60%;
+  position: relative;
+  background-color: #787427;
+  overflow: hidden;
+}
+
+/* Layar besar (desktop/laptop): 50% / 50% */
+@media (min-width: 1025px) {
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+  }
+}
+
+.left h4 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.left p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  text-transform: capitalize;
+}
+
+.lihat-tugas {
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+}
+
+.half-circle {
+  position: absolute;
+  width: 90%;
+  height: 45%;
+  background-color: #e6e6d8;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.half-circle.top {
+  top: 0;
+  border-radius: 0 0 100vw 100vw;
+  background-image: url('../Photo/18.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.half-circle.bottom {
+  bottom: 0;
+  border-radius: 100vw 100vw 0 0;
+  background-image: url('../Photo/19.png');
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel dan Button</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .edit {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      .delete {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      .edit:hover {
+        background-color: #2980b9;
+      }
+
+      .delete:hover {
+        background-color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Nama Mahasiswa : MUH. ALIF SULTHAN HADINI</p>
+      <p>NIM Mahasiswa : 231110-136</p>
+
+      <h2>Tabel Jadwal Pendadaran Mahasiswa</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jurusan</th>
+            <th>Waktu</th>
+            <th>Dosen Penguji</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nama 2</td>
+            <td>12345</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 13:00</td>
+            <td>Bapak ABC</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Nama 3</td>
+            <td>12345</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 13:00</td>
+            <td>Bapak ABC</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Nama 4</td>
+            <td>12345</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 13:00</td>
+            <td>Bapak ABC</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

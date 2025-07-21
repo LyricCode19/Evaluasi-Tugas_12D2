@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #007bff, #1e3c72);
+        color: white;
+        text-align: center;
+      }
+
+      .container {
+        margin-top: 60px;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #f0f8ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .login-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 25px 30px;
+        margin: 20px auto;
+        width: 300px;
+        backdrop-filter: blur(5px);
+      }
+
+      .login-box label {
+        display: block;
+        margin-top: 10px;
+        color: #fff;
+        text-align: left;
+      }
+
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .login-box button {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        background-color: #fdbb2d;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .login-box button:hover {
+        background-color: #f9a825;
+      }
+
+      .register-text {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .register-text a {
+        color: #ffff66;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Login</h2>
+      <p>Dibuat oleh : <a href="#">MUH. ALIF SULTHAN HADINI</a></p>
+      <p>NIM : 231110-136</p>
+      <div class="login-box">
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+        <p class="register-text">
+          Belum punya akun? <a href="#">Daftar di sini</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

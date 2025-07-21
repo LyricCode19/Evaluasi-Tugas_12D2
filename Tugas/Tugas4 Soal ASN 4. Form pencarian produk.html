@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Kamera</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+
+      .info {
+        padding: 20px;
+        font-size: 16px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .hero {
+        background-image: url("https://wallpaperaccess.com/full/1358210.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 90%;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      form {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      input,
+      select,
+      button {
+        padding: 10px 14px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+      }
+
+      button {
+        background-color: #28a745;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+
+      label {
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <p>Nama Mahasiswa : <strong>MUH. ALIF SULTHAN HADINI</strong></p>
+      <p>NIM Mahasiswa : <strong>231110-136</strong></p>
+    </div>
+
+    <div class="hero">
+      <div class="overlay">
+        <h1>Rental Kamera</h1>
+        <p>Silakan isi form di bawah ini untuk mengecek ketersediaan kamera</p>
+        <form>
+          <div class="form-group">
+            <label for="tanggalPinjam">Tanggal Pinjam</label>
+            <input
+              type="date"
+              id="tanggalPinjam"
+              name="tanggalPinjam"
+              value="2025-04-22"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tanggalKembali">Tanggal Kembali</label>
+            <input
+              type="date"
+              id="tanggalKembali"
+              name="tanggalKembali"
+              value="2025-04-24"
+            />
+          </div>
+          <div class="form-group">
+            <label for="kamera">Nama Kamera</label>
+            <select id="kamera" name="kamera">
+              <option>Kamera 1</option>
+              <option>Kamera 2</option>
+              <option>Kamera 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>&nbsp;</label>
+            <button type="submit">Cek Ketersediaan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

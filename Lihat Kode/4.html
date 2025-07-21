@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gabungan Kode Tugas</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #f5f5f5;
+      padding: 30px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-family: sans-serif;
+      margin-bottom: 10px;
+    }
+    pre {
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+
+
+    <!----------------------------- SOAL ASN 1 (dasar HTML) ---------------------------------->
+  <div class="container">
+    <h2>Kode SOAL ASN 1 Dasar HTML</h2>
+    <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="id"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Dasar HTML&lt;/title&gt;
+      &lt;style&gt;
+        body {
+          background-color: #c4baff;
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+        .container {
+          max-width: 600px;
+          margin: auto;
+          background-color: #c4baff;
+          padding: 20px;
+        }
+        .profile-img {
+          width: 200px;
+          height: auto;
+          border-radius: 8px;
+          display: block;
+          margin-bottom: 20px;
+        }
+        h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-weight: bold;
+        }
+        .section-title.orange {
+          border: none;
+          height: 10px;
+          background-color: #ffb3b3;
+          margin: 20px 0 10px;
+        }
+        .section-title.blue {
+          border: none;
+          height: 10px;
+          background-color: #d1d1ff;
+          margin: 20px 0 10px;
+        }
+        a {
+          color: blue;
+          text-decoration: underline;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div class="container"&gt;
+        &lt;img
+          src="https://cdn.idntimes.com/content-images/community/2023/10/3-93bda385963db80e8617981d768790d2-fb1e326fd02dcd714b5eea263814112f.jpg"
+          alt="Foto Mahasiswa"
+          class="profile-img"
+        /&gt;
+        &lt;h1&gt;MUH. ALIF SULTHAN HADINI&lt;/h1&gt;
+        &lt;p&gt;NIM: 231110136&lt;/p&gt;
+        &lt;p&gt;Jurusan Teknik Informatika&lt;/p&gt;
+        &lt;hr class="section-title orange" /&gt;
+        &lt;h3&gt;Bidang Developer&lt;/h3&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Pengembangan Web&lt;/li&gt;
+          &lt;li&gt;Kecerdasan Buatan&lt;/li&gt;
+          &lt;li&gt;Sistem Informatika&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;hr class="section-title blue" /&gt;
+        &lt;h3&gt;Sosial Media&lt;/h3&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href="https://instagram.com/afrizal.rizky_" target="_blank"&gt;Instagram&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="https://linkedin.com" target="_blank"&gt;LinkedIn&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="https://github.com/afrizaldeveloper" target="_blank"&gt;GitHub&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+
+    </pre>
+  </div>
+
+
+
+      <!----------------------------- SOAL ASN 2 (Tabel dan Button) ---------------------------------->
+  <div class="container">
+    <h2>Kode SOAL ASN 2 Tabel dan Button</h2>
+    <pre>
+ &lt;!DOCTYPE html&gt;
+  &lt;html lang="id"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Form Login&lt;/title&gt;
+      &lt;style&gt;
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to bottom right, #007bff, #1e3c72);
+          color: white;
+          text-align: center;
+        }
+        .container {
+          margin-top: 60px;
+        }
+        h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+        a {
+          color: #f0f8ff;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        .login-box {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 25px 30px;
+          margin: 20px auto;
+          width: 300px;
+          backdrop-filter: blur(5px);
+        }
+        .login-box label {
+          display: block;
+          margin-top: 10px;
+          color: #fff;
+          text-align: left;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+          border: none;
+          border-radius: 5px;
+        }
+        .login-box button {
+          margin-top: 15px;
+          width: 100%;
+          padding: 10px;
+          background-color: #fdbb2d;
+          border: none;
+          border-radius: 5px;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+        .login-box button:hover {
+          background-color: #f9a825;
+        }
+        .register-text {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+        .register-text a {
+          color: #ffff66;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div class="container"&gt;
+        &lt;h2&gt;Form Login&lt;/h2&gt;
+        &lt;p&gt;Dibuat oleh : &lt;a href="#"&gt;MUH. ALIF SULTHAN HADINI&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;NIM : 231110136&lt;/p&gt;
+        &lt;div class="login-box"&gt;
+          &lt;form&gt;
+            &lt;label for="username"&gt;Username:&lt;/label&gt;
+            &lt;input type="text" id="username" name="username" required /&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;
+            &lt;input type="password" id="password" name="password" required /&gt;
+            &lt;button type="submit"&gt;Login&lt;/button&gt;
+          &lt;/form&gt;
+          &lt;p class="register-text"&gt;
+            Belum punya akun? &lt;a href="#"&gt;Daftar di sini&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+    </pre>
+  </div>
+
+
+
+
+  <!----------------------------- SOAL ASN 3 (Login Form) ---------------------------------->
+  <div class="container">
+    <h2>Kode SOAL 3 Login Form</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+  &lt;html lang="id"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Form Login&lt;/title&gt;
+      &lt;style&gt;
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to bottom right, #007bff, #1e3c72);
+          color: white;
+          text-align: center;
+        }
+        .container {
+          margin-top: 60px;
+        }
+        h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+        a {
+          color: #f0f8ff;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        .login-box {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 25px 30px;
+          margin: 20px auto;
+          width: 300px;
+          backdrop-filter: blur(5px);
+        }
+        .login-box label {
+          display: block;
+          margin-top: 10px;
+          color: #fff;
+          text-align: left;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+          border: none;
+          border-radius: 5px;
+        }
+        .login-box button {
+          margin-top: 15px;
+          width: 100%;
+          padding: 10px;
+          background-color: #fdbb2d;
+          border: none;
+          border-radius: 5px;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+        .login-box button:hover {
+          background-color: #f9a825;
+        }
+        .register-text {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+        .register-text a {
+          color: #ffff66;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div class="container"&gt;
+        &lt;h2&gt;Form Login&lt;/h2&gt;
+        &lt;p&gt;Dibuat oleh : &lt;a href="#"&gt;MUH. ALIF SULTHAN HADINI&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;NIM : 231110136&lt;/p&gt;
+        &lt;div class="login-box"&gt;
+          &lt;form&gt;
+            &lt;label for="username"&gt;Username:&lt;/label&gt;
+            &lt;input type="text" id="username" name="username" required /&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;
+            &lt;input type="password" id="password" name="password" required /&gt;
+            &lt;button type="submit"&gt;Login&lt;/button&gt;
+          &lt;/form&gt;
+          &lt;p class="register-text"&gt;
+            Belum punya akun? &lt;a href="#"&gt;Daftar di sini&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+    </pre>
+  </div>
+
+
+
+
+
+
+   <!----------------------------- SOAL ASN 4 (Form pemcarian produk) ---------------------------------->
+  <div class="container">
+    <h2>Kode SOAL 4 From Pencarian</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+  &lt;html lang="id"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Rental Kamera&lt;/title&gt;
+      &lt;style&gt;
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+        }
+        body {
+          background-color: #f4f4f4;
+        }
+        .info {
+          padding: 20px;
+          font-size: 16px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        .hero {
+          background-image: url("https://wallpaperaccess.com/full/1358210.jpg");
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          position: relative;
+        }
+        .overlay {
+          background: rgba(0, 0, 0, 0.6);
+          padding: 40px;
+          border-radius: 12px;
+          max-width: 600px;
+          width: 90%;
+        }
+        .hero h1 {
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        .hero p {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+        form {
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        input,
+        select,
+        button {
+          padding: 10px 14px;
+          border-radius: 5px;
+          border: none;
+          font-size: 14px;
+        }
+        button {
+          background-color: #28a745;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+        button:hover {
+          background-color: #218838;
+        }
+        label {
+          font-weight: bold;
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div class="info"&gt;
+        &lt;p&gt;Nama Mahasiswa : &lt;strong&gt;MUH. ALIF SULTAHAN HADINI&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;NIM Mahasiswa : &lt;strong&gt;231110136&lt;/strong&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="hero"&gt;
+        &lt;div class="overlay"&gt;
+          &lt;h1&gt;Rental Kamera&lt;/h1&gt;
+          &lt;p&gt;Silakan isi form di bawah ini untuk mengecek ketersediaan kamera&lt;/p&gt;
+          &lt;form&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="tanggalPinjam"&gt;Tanggal Pinjam&lt;/label&gt;
+              &lt;input type="date" id="tanggalPinjam" name="tanggalPinjam" value="2025-04-22" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="tanggalKembali"&gt;Tanggal Kembali&lt;/label&gt;
+              &lt;input type="date" id="tanggalKembali" name="tanggalKembali" value="2025-04-24" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="kamera"&gt;Nama Kamera&lt;/label&gt;
+              &lt;select id="kamera" name="kamera"&gt;
+                &lt;option&gt;Kamera 1&lt;/option&gt;
+                &lt;option&gt;Kamera 2&lt;/option&gt;
+                &lt;option&gt;Kamera 3&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label&gt;&amp;nbsp;&lt;/label&gt;
+              &lt;button type="submit"&gt;Cek Ketersediaan&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+    </pre>
+  </div>
+
+</body>
+</html> 

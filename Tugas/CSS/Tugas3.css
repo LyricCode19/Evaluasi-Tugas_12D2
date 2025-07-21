@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  
+  /*Bagian Hero*/
+  .hero {
+    background-image: url('Photo/Background_pawel-czerwinski.jpg'); /* Ganti dengan nama file gambar latar belakang kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* Tambahan padding agar kontennya tidak terlalu menempel */
+    color: white; /* Opsional: jika gambar latar belakang gelap, teks akan tetap terlihat */
+    text-align: center; /* Agar konten di tengah */
+  }
+  
+  
+  .circle-frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 4px solid #000000; /* pink soft */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .circle-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero h3 {
+    font-weight: normal;
+    margin-top: 0.5rem;
+  }
+  
+  .hero p {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  
+  
+  /*Bagian Spesialis*/
+  .specialty {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .specialty .title {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: gray;
+  }
+  
+  .specialty h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .specialty h2 span {
+    color: #3498db;
+  }
+  
+  .specialty .desc {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+  }
+  
+  
+  
+  /*Bagian Card*/
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+  
+  .card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .card p {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  
+  /* Avatar Lingkaran */
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+  }
+  
+  /* Icon dalam lingkaran */
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #333; /* Warna latar lingkaran */
+    padding: 10px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .pink-bg {
+    background-color: #333;
+  }
+  
+  
+  

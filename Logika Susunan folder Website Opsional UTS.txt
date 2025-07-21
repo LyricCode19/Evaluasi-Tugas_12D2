@@ -1,0 +1,370 @@
+Introduce...
+
+Untuk mencapai hasil terbaik, setiap proses saya jalani 
+dengan tekad yang kuat dan komitmen penuh. Saya percaya 
+bahwa usaha yang sungguh-sungguh adalah langkah penting 
+untuk terus berkembang dan siap menghadapi tantangan berikutnya.
+
+Lihat Tugas...
+
+
+#e6e6d8 (warna putih susu) --> kanan
+#787427 (warna hijau muda) --> kiri
+
+———————————————————————————————————————————————————————————————————
+TUBES UTS/
+├── CSS/
+│   ├──
+│   └──
+├── JavaScript/
+│   ├──
+│   └──
+├── Lihat Kode/
+│   ├──
+│   └──
+├── Photo/
+│   ├──
+│   └──
+├── Tugas/
+│   ├── CSS/
+│   │   ├──
+│   │   ├──
+│   │   └──
+│   ├── Photo/
+│   │   ├──
+│   │   ├──
+│   │   └──
+│   ├── Vidio/
+│   │   ├──
+│   │   ├──
+│   │   └──
+│   ├── 
+│   ├── 
+│   └── 
+├── 
+├── 
+├── 
+├── 
+├── 
+├── 
+├── 
+└── 
+
+———————————————————————————————————————————————————————————————————
+TUBES UTS/
+├──  CSS/
+│   ├── Halaman Tugas(ASN).css
+│   ├── Halaman Tugas(TugasPraktikum).css
+│   ├── Halaman Utama1.css
+│   └── Halaman Utama2.css
+├── JavaScript/
+│   ├── Halaman Tugas2 (Scroll).js
+│   └── Kosong.js
+├── Lihat Kode/
+│   ├── 1.html
+│   ├── 2.html
+│   ├── 3.html
+│   ├── 4.html
+│   ├── 5.html
+│   ├── 6.html
+│   ├── 7.html
+│   ├── 8.html
+│   ├── 9.html
+│   ├── 10.html
+│   ├── 11.html
+│   ├── 12.html
+│   ├── 13.html
+│   ├── 14.html
+│   ├── 15.html
+│   └── 16.html
+├── Photo/
+│   ├── (1)Halaman Utama1.html.jpg
+│   ├── (2)Halaman Utama2.html.png
+│   ├── (3)Halaman Tugas1.html.png
+│   ├── (4).png
+│   ├── ()Halaman Tugas1.html.png
+│   ├── 18.png
+│   └── 19.png
+├── Tugas/
+│   ├── CSS/
+│   │   ├──Tugas3.css
+│   │   ├──
+│   │   └──
+│   ├── Photo/
+│   │   ├── portofolio1
+│   │   ├── portofolio2
+│   │   ├── portofolio3
+│   │   ├── portofolio4
+│   │   ├── profil1
+│   │   ├── latihan8_1
+│   │   ├── mobil1
+│   │   ├── mobil2
+│   │   ├── mobil3
+│   │   ├── mobil4
+│   ├── Vidio/
+│   │   ├──
+│   │   ├──
+│   │   └──
+│   ├── Tugas1.html
+│   ├── Tugas2.html
+│   ├── Tugas3.html
+│   ├── Tugas4.html
+│   ├── Tugas5.html
+│   ├── Tugas6.html
+│   ├── Tugas7.html
+│   ├── Tugas8.html
+│   ├── Tugas9.html
+│   ├── Tugas10.html
+│   ├── Tugas11.html
+│   ├── Tugas12.html
+│   ├── Tugas13.html
+│   ├── Tugas14.html
+│   ├── Tugas15.html
+│   └── Tugas16.html
+├── Halaman Tugas1.html
+├── Halaman Tugas2.html
+├── Halaman Tugas3.html
+├── Halaman Tugas4.html
+├── Halaman Tugas5.html
+├── Halaman Tugas6.html
+├── Halaman Tugas7.html
+├── Halaman Tugas8.html
+├── Halaman Tugas9.html
+├── Halaman Tugas10.html
+├── Halaman Tugas11.html
+├── Halaman Tugas12.html
+├── Halaman Tugas13.html
+├── Halaman Tugas14.html
+├── Halaman Tugas15.html
+├── Halaman Tugas16.html
+├── Halaman Utama1.html
+├── Halaman Utama2.html
+
+———————————————————————————————————————————————————————————————————
+
+
+kode Halaman Tugas :
+
+–––––——————————————————————————————————————————————————————————————————————————————————————————————————–––––
+(1.html)
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <link rel="stylesheet" href="Cobaaa.css">
+</head>
+<body>
+    <!-- Container 1: Latar belakang 2 warna -->
+    <div class="container">
+         <!-- Konten Info -->
+         <div class="left">
+         <h1>Praktikum<br>Pemrograman<br>Web_12D3</h1>
+         <p class="judul-tugas">Tugas1_Struktur Dasar HTML</p>
+         
+         <p class="lihat-kode">
+          <a href="Lihat Kode/1.html">Lihat Kode</a>
+         </p>
+
+        </div>
+
+
+          <div class="right"></div>
+     </div>
+  
+     <!-- Container 2: Inner Box -->
+     <div class="floating-box">
+        <div class="inner-box">
+          <iframe src="Tugas/Tugas1.html" frameborder="0"></iframe>
+        </div>
+      </div>
+
+
+  </body>
+  </html>
+
+–––––——————————————————————————————————————————————————————————————————————————————————————————————————–––––
+
+(2. css)
+/* Reset dan pastikan html + body memenuhi layar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #e6e6d8;
+  }
+  
+
+
+/* Container latar belakang split */
+.container {
+    display: flex;
+    height: 100vh; /* kembali ke 100vh supaya penuh */
+    position: relative;
+  }
+  
+  
+  .left {
+    position: relative;
+    padding: flex;
+
+    background-color: #e6e6d8;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;     /* Vertikal tengah */
+    align-items: flex-end;       /* Geser ke kanan */
+    padding: 60px;
+    text-align: left;
+  }
+  
+  .right {
+    background-color: #787427;
+    flex: 2;
+  }
+ 
+  .left h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: serif, 'Georgia';
+    color: #000000
+    ;
+  }
+  
+  .left .judul-tugas {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  
+  /* Floating Box (box melayang di atas) */
+  .floating-box {
+    position: absolute;
+    top: 50px;      
+    right: 5%; /* Geser ke kanan, bisa disesuaikan */
+    width: 60%; /* Hampir sebesar .right */
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+
+    height: calc(100vh - 120px);
+  }
+
+  .inner-box {
+    width: 100%; /* Ikuti ukuran .floating-box */
+    height: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  
+  .inner-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .lihat-kode {
+    position: absolute;
+    bottom: 10px; /* Jarak dari bawah */
+    left: 50%; /* Posisi horizontal dimulai dari 50% */
+    transform: translateX(-50%); /* Geser ke kiri 50% dari lebar elemen */
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Georgia';
+    font-style: italic;
+    color: #000000;
+    text-decoration: none;
+}
+
+ .lihat-kode {
+    white-space: nowrap; /* Teks tetap 1 baris */
+    display: inline-block; /* Hindari line-break otomatis */
+    margin: 0; /* Hapus margin default <p> */
+    padding: 0;
+}
+
+.lihat-kode a {
+    text-decoration: none;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia';
+}
+  
+
+
+
+ /* (Inner-Box, Pindah ke Bawah Teks) Ukuran -> Tablet  */
+   @media (max-width: 768px) {
+  
+    .container {
+      height: auto; /* Ubah dari 150vh ke auto */
+      min-height: 100vh; /* Tetap penuh layar minimal */
+    }
+
+   /*--- (box melayang di atas) ---*/
+
+   .floating-box {
+    position: absolute;
+    top: 300px;
+    right: 5%; /* Geser ke kanan, bisa disesuaikan */
+    width: 90%; /* Hampir sebesar .right */
+    
+    height: calc(100vh - 400px);
+   
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+
+   }
+
+   .inner-box {
+    height:60vh; /* <= ini ideal agar tidak menutup class lihat-kode */
+    min-height: 300px;
+  }
+  
+}
+
+ /* (Inner-Box, Pindah ke Bawah Teks) Ukuran -> Hanphone/Smartphone  */
+ @media (max-width: 576px) {
+  .container {
+    height: auto; /* Ubah dari 150vh ke auto */
+    min-height: 100vh; /* Tetap penuh layar minimal */
+  }
+
+ /*--- (box melayang di atas) ---*/
+
+ .floating-box {
+  position: absolute;
+  top: 300px;
+  right: 5%; /* Geser ke kanan, bisa disesuaikan */
+  width: 90%; /* Hampir sebesar .right */
+  
+  height: calc(100vh - 400px);
+ 
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+
+ }
+
+ .inner-box {
+  height:60vh; /* <= ini ideal agar tidak menutup class lihat-kode */
+  min-height: 300px;
+}
+
+}
+
+
